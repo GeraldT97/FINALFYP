@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/gradient2"
+tools:context=".EditProfile"
+tools:layout_editor_absoluteY="25dp">
+
+<TextView
+    android:id="@+id/registrationtitle"
+    android:layout_width="190dp"
+    android:layout_height="64dp"
+    android:layout_marginStart="122dp"
+    android:layout_marginLeft="122dp"
+    android:layout_marginTop="104dp"
+    android:layout_marginEnd="99dp"
+    android:layout_marginRight="99dp"
+    android:text="Edit Profile"
+    android:textColor="#fff"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.925"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+
+<Button
+    android:id="@+id/update_Btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="195dp"
+    android:layout_marginLeft="195dp"
+    android:layout_marginTop="69dp"
+    android:layout_marginEnd="128dp"
+    android:layout_marginRight="128dp"
+    android:layout_marginBottom="106dp"
+    android:onClick="OnUpdate"
+    android:text="Update"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/Uemail"
+    app:layout_constraintVertical_bias="0.548" />
+
+<EditText
+    android:id="@+id/Uemail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="176dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:text="Email"
+    android:textColor="#fff"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.503"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/registrationtitle" />
+
+<EditText
+    android:id="@+id/Upassword"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="48dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:text="Password"
+    android:textColor="#fff"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.503"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/registrationtitle" />
+
+<EditText
+    android:id="@+id/Ucontactno"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="112dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:text="Contact NO"
+    android:textColor="#fff"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.503"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/registrationtitle" />
+
+</android.support.constraint.ConstraintLayout>
