@@ -3,6 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient5"
     >
     <TextView android:id="@+id/title_paired_devices"
         android:layout_width="match_parent"
@@ -14,12 +15,14 @@
         android:textColor="#fff"
         android:paddingLeft="5dp"
         />
-    <ListView android:id="@+id/paired_devices"
+
+    <ListView
+        android:id="@+id/paired_devices"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:stackFromBottom="false"
+        android:layout_height="472dp"
         android:layout_weight="1"
-        />
+        android:stackFromBottom="false"
+        android:textColor="#fff" />
 
     <TextView
         android:id="@+id/connecting"
@@ -32,6 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="If no devices are listed please pair your device in Android settings"
+        android:textSize="15dp"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <LinearLayout

@@ -19,6 +19,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.github.clans.fab.FloatingActionButton;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -29,6 +31,7 @@ public class BluetoothConnection2 extends Activity {
     // Button btnOn, btnOff;
     TextView txtArduino, txtString, txtStringLength, temperature, oilevel, pressure, btnOn, btnOff;
     Handler bluetoothIn,bluetoothIn2;
+    FloatingActionButton fab_OFF, fab_ON;
     Context context;
 
     final int handlerState = 0;                        //used to identify handler message
@@ -60,6 +63,8 @@ public class BluetoothConnection2 extends Activity {
         temperature = (TextView) findViewById(R.id.sensorView0);
         oilevel = (TextView) findViewById(R.id.sensorView1);
         pressure = (TextView) findViewById(R.id.sensorView2);
+        fab_OFF = findViewById(R.id.fab_OFF);
+        fab_ON = findViewById(R.id.fab_ON);
 
 
         bluetoothIn2 = new Handler() {
@@ -108,14 +113,14 @@ public class BluetoothConnection2 extends Activity {
         checkBTState();
 
         // Set up onClick listeners for buttons to send 1 or 0 to turn on/off LED
-       btnOff.setOnClickListener(new OnClickListener() {
+       fab_OFF.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 mConnectedThread.write("0");    // Send "0" via Bluetooth
                 Toast.makeText(getBaseContext(), "Headlights OFF", Toast.LENGTH_SHORT).show();
             }
         });
 
-        btnOn.setOnClickListener(new OnClickListener() {
+        fab_ON.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 mConnectedThread.write("1");    // Send "1" via Bluetooth
                 Toast.makeText(getBaseContext(), "Headlights ON", Toast.LENGTH_SHORT).show();

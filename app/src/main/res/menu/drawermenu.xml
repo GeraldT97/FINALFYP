@@ -2,8 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:id="@+id/Home" android:title="Home"/>
-    <item android:id="@+id/Notification" android:title="Notification"/>
-    <item android:id="@+id/Settings" android:title="Scan Fingerprint"/>
+    <item android:id="@+id/Updateprofile" android:title="Update Profile"/>
     <item android:id="@+id/Logout" android:title="Logout"/>
 
 

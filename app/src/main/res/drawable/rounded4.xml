@@ -15,9 +15,9 @@
         android:top="2dp"
         android:bottom="2dp"/>
 
-    <gradient android:startColor="#da561e"
+    <gradient android:startColor="#e49b1e"
 
-        android:endColor="#d42818" android:angle="45"></gradient>
+        android:endColor="#d44118" android:angle="45"></gradient>
 
 
 </shape>

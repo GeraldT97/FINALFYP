@@ -37,8 +37,8 @@ public class BackgroundExecution extends AsyncTask<String,Void,String> {
     protected String doInBackground(String... params) {
         String type = params[0];
         user_name=params[1];
-        String login_url = "http://192.168.1.64/login.php";
-        String register_url = "http://192.168.1.64/register.php";
+        String login_url = "http://192.168.1.69/login.php";
+        String register_url = "http://192.168.1.69/register.php";
         if (type.equals("login")) {
             try {
                String user_name = params[1];

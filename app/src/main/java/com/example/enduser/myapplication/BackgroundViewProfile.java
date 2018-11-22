@@ -32,7 +32,7 @@ public class BackgroundViewProfile  extends AsyncTask<String,Void,String> {
     @Override
     protected String doInBackground(String... params) {
 
-        String selectprofile_url = "http://192.168.1.64/selectprofile.php";
+        String selectprofile_url = "http://192.168.1.69/selectprofile.php";
 
         user_name = params[0];
 

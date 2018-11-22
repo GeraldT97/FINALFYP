@@ -24,6 +24,8 @@ public class NavigationDrawer extends AppCompatActivity implements NavigationVie
     private ActionBarDrawerToggle mToggle;
     private static Context mCtx;
     private static NavigationDrawer mInstance;
+    String p,cn, d, e, userName;
+
 String user_name;
 
     @Override
@@ -33,6 +35,7 @@ String user_name;
 
        //user_name = getIntent().getStringExtra("username");
         //makeText(context, user_name, LENGTH_LONG).show();
+
 
 
         drawer = findViewById(R.id.drawer_layout);
@@ -60,13 +63,24 @@ String user_name;
     public boolean onNavigationItemSelected(@NonNull MenuItem item){
 
         Fragment fragment = null;
+        p = getIntent().getExtras().getString("password");
+        userName = getIntent().getExtras().getString("username");
+        cn = getIntent().getExtras().getString("contactno");
+        e = getIntent().getExtras().getString("email");
         int id= item.getItemId();
 
         if(id == R.id.Home){
             fragment = new HomeFragment();
           // user_name = getActivity().getIntent().getExtras().getString("username");
-        }else if (id == R.id.Notification) {
-            fragment = new NotificationFragment();
+        }else if (id == R.id.Updateprofile) {
+           // fragment = new Fragment();
+            Intent startIntent = new Intent(getApplicationContext(), EditProfile.class);
+            startIntent.putExtra("username", userName);
+            startActivity(startIntent);
+        }else if (id == R.id.Logout) {
+            // fragment = new Fragment();
+            Intent startIntent = new Intent(getApplicationContext(), Login.class);
+            startActivity(startIntent);
         }
 
 

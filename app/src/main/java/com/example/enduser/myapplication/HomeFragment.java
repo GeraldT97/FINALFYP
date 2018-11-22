@@ -56,15 +56,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        ImageView Light  = (ImageView) v.findViewById(R.id.light);
-        Light.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getActivity().getApplicationContext(), ConnectionForSwitchPre.class);
-                startActivity(startIntent);
-            }
-        });
+
 
 
 
